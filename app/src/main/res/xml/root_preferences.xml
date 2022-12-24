@@ -52,6 +52,13 @@
             app:title="@string/photo_capture_mode_title"
             app:useSimpleSummaryProvider="true" />
 
+        <SwitchPreference
+            app:defaultValue="false"
+            app:iconSpaceReserved="false"
+            app:key="enable_zsl"
+            app:summary="@string/enable_zsl_summary"
+            app:title="@string/enable_zsl_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
