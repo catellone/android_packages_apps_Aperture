@@ -86,6 +86,8 @@ dependencies {
     // Coil
     implementation("io.coil-kt:coil:2.2.2")
     implementation("io.coil-kt:coil-video:2.2.2")
+
+    implementation(files("./libs/cameralite/classes.jar"))
 }
 
 tasks.register("generateBp") {

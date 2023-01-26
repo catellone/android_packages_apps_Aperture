@@ -110,6 +110,7 @@ import java.io.InputStream
 import java.util.concurrent.ExecutorService
 import kotlin.math.abs
 import kotlin.reflect.safeCast
+import com.google.android.apps.cameralite.camerax.NightModeProxy
 
 @androidx.camera.camera2.interop.ExperimentalCamera2Interop
 @androidx.camera.core.ExperimentalZeroShutterLag
@@ -736,6 +737,8 @@ open class CameraActivity : AppCompatActivity() {
         if (!permissionsUtils.mainPermissionsGranted()) {
             mainPermissionsRequestLauncher.launch(PermissionsUtils.mainPermissions)
         }
+
+        cameraController.setEffects()
 
         // Set bright screen
         setBrightScreen(sharedPreferences.brightScreen)
